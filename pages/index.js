@@ -1,16 +1,10 @@
 //index page
-import Link from 'next/link';
+import Layout from '../components/Layout';
 
  const Index = () => (
-  <main>
-    <nav>
-      <ul>
-        <li><Link href="/"><a>Home</a></Link></li>
-        <li><Link href="/about"><a>About</a></Link></li>
-      </ul>
-    </nav>
+  <Layout>
     <h1>Welcome to Index page.</h1>
-  </main>
-)
+  </Layout>
+);
 
 export default Index;
