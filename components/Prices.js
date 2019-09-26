@@ -17,8 +17,10 @@ class Prices extends React.Component {
             <strong>{rate}</strong>
           </li>
         </ul>
+        <hr />
         <select className="form-control" onChange={e => this.setState({currency: e.target.value})}>
-          <option value="USD">USD</option>
+          
+          <option value="USD" selected>USD</option>
           <option value="GBP">GBP</option>
           <option value="EUR">EUR</option>
         </select>
