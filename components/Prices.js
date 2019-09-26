@@ -6,17 +6,17 @@ const Prices = (props) => {
   const { description, code, rate } = props.bpi[currency];
   
   return (
-    <div>
+    <div className="Prices">
       <ul className="list-group">
         <li className="list-group-item">
-          Bitcoin rate for {description}
+          Current Bitcoin rate for {description}
           : <span className="badge badge-primary">{code}</span>
           <strong>{rate}</strong>
         </li>
       </ul>
       <hr />
       <select className="form-control" onChange={e => setCurrency(e.target.value)}>   
-        <option value="USD" selected>USD</option>
+        <option value="USD">USD</option>
         <option value="GBP">GBP</option>
         <option value="EUR">EUR</option>
       </select>
