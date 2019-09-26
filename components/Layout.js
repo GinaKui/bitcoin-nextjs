@@ -5,10 +5,12 @@ const Layout = (props) => (
   <div>
     <Head>
       <title>BitzPrice</title>
-      <link ref="stylesheet" href="https://bootswatch.com/4/cerulean/bootstrap.min.css"/>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossOrigin="anonymous" />
     </Head>
     <Navbar />
-    {props.children}
+    <div className="container">
+      {props.children}
+    </div>
   </div>
 );
 

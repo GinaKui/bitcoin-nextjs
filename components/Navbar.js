@@ -2,28 +2,20 @@ import Link from 'next/link';
 
 const Navbar = () => {
   return (
-    <nav>
-      <ul>
-        <li><Link href="/"><a>Home</a></Link></li>
-        <li><Link href="/about"><a>About</a></Link></li>
-      </ul>
-      <style jsx>{`
-        ul {
-          background: #333;
-          list-style: none;
-          display: flex;
-        }
-        ul li {
-          margin-right: 20px;
-          font-size: 18px;
-        }
-
-        a {
-          color: white;
-          text-decoration: none;
-        }
-      `
-      }</style>
+    <nav className="navbar navbar-expand navbar-dark bg-dark mb-4">
+      <div className="container">
+        <a className="navbar-brand" href="#">BitzPrice</a>
+        <div className="collapse navbar-collapse">
+          <ul className="navbar-nav">
+            <li className="nav-item">
+              <Link href="/"><a className="nav-link">Home</a></Link>
+            </li>
+            <li className="nav-item">
+              <Link href="/about"><a className="nav-link">About</a></Link>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
   );
 };
