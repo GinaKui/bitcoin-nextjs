@@ -1,5 +1,7 @@
 import Link from 'next/link';
-
+/**
+ * Navbar builted based on bootstrap style
+ */
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand navbar-dark bg-dark mb-4">

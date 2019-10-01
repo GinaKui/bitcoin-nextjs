@@ -2,7 +2,7 @@ import fetch from 'isomorphic-unfetch';
 import Layout from '../components/Layout';
 import Prices from '../components/Prices';
 
- const Index = (props) => (
+const Index = props => (
   <Layout>
     <h1>Welcome to BitzPrice!</h1>
     <Prices bpi={props.bpi} />

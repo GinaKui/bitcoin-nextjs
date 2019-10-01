@@ -1,7 +1,7 @@
-/*
-*  this Display the bitcoin price
-*/
-const Prices = (props) => {
+/**
+ * Display bitcoin price 
+ */
+const Prices = props => {
   const [currency, setCurrency] = React.useState('USD');
   const { description, code, rate } = props.bpi[currency];
   
@@ -9,9 +9,9 @@ const Prices = (props) => {
     <div className="Prices">
       <ul className="list-group">
         <li className="list-group-item">
-          Current Bitcoin rate for {description}
-          : <span className="badge badge-primary">{code}</span>
-          <strong>{rate}</strong>
+          Current Bitcoin rate for {description}:
+          &nbsp;<strong>{rate}</strong>
+          &nbsp;<span className="badge badge-primary">{code}</span>
         </li>
       </ul>
       <hr />
